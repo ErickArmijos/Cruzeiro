@@ -328,7 +328,7 @@ p {
   color: black;
 }
 
-.conteiner {
+.container {
   width: 95%;
   max-width: 120rem;
   margin: 0 auto;
@@ -356,15 +356,88 @@ h3 {
 
 .header {
   background-color: #294492;
+  padding: 2rem;
 }
 .header h1 {
   color: white;
+  margin: 0;
+}
+.header .container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .header .container-header {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .header .container-header nav {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
+.main-navegation {
+  display: flex;
+  gap: 4rem;
+  margin: 0;
+}
 .main-navegation a {
   color: white;
   font-size: 2.4rem;
 }
 .main-navegation a:hover {
   color: rgb(239, 239, 27);
+}
+
+.image {
+  position: relative;
+  max-height: 55rem;
+  min-width: 40rem;
+  overflow: hidden;
+}
+.image .overlay {
+  position: absolute;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.2833508403) 0%, rgba(0, 212, 255, 0.1769082633) 52%, rgba(9, 9, 121, 0.2077205882) 85%, rgba(9, 9, 121, 0.1769082633) 100%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.image img {
+  width: 100%;
+  display: block;
+}
+@media (max-width: 760px) {
+  .image img {
+    width: auto;
+  }
+}
+
+.contain-image h2 {
+  color: white;
+  font-size: 7rem;
+  margin: 0;
+}
+@media (max-width: 760px) {
+  .contain-image h2 {
+    font-size: 3rem;
+  }
+}
+.contain-image p {
+  background-color: #E69019;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: bold;
+}
+@media (max-width: 760px) {
+  .contain-image p {
+    font-size: 1.5rem;
+  }
 }
