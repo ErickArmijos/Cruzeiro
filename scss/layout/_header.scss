@@ -1,5 +1,7 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+
+
 .header{
     background-color: v.$blue;  
     padding: 2rem;
@@ -13,12 +15,12 @@
             justify-content: space-between;
             align-items: center;
            
-                @include m.phone{
+                @include m.tablet{
                     flex-direction: column;   
                     gap: 4rem;          
                 }
             nav{
-                @include m.phone{
+                @include m.tablet{
                     flex-direction: column;  
                     gap: 2rem;   
                 }
@@ -32,7 +34,7 @@
     display: flex;
     gap: 4rem;
     margin: 0;
-    a{
+    a{        
         color: v.$white;
         font-size: 2.4rem;        
         &:hover{

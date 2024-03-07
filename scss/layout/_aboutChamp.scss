@@ -1,2 +1,29 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
+
+.about-crz{
+    padding: 5rem;
+    @include m.grid(2,5rem);
+    img{
+        max-width: 100%;
+        display: block;
+        @include m.tablet{
+            margin-bottom: 3rem;
+        }
+    }
+    @include m.tablet{
+        display: block;
+    }
+}
+
+.contain-crz{
+    
+    h2{
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+    .date{
+        color: v.$orange;
+        font-weight: bold;
+    }
+}

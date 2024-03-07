@@ -367,13 +367,13 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 760px) {
   .header .container-header {
     flex-direction: column;
     gap: 4rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 760px) {
   .header .container-header nav {
     flex-direction: column;
     gap: 2rem;
@@ -440,4 +440,34 @@ h3 {
   .contain-image p {
     font-size: 1.5rem;
   }
+}
+
+.about-crz {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+.about-crz img {
+  max-width: 100%;
+  display: block;
+}
+@media (max-width: 760px) {
+  .about-crz img {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 760px) {
+  .about-crz {
+    display: block;
+  }
+}
+
+.contain-crz h2 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.contain-crz .date {
+  color: #E69019;
+  font-weight: bold;
 }
