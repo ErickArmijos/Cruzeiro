@@ -8,7 +8,7 @@
     $asw = mysqli_fetch_array($query); // Corregido $consulta a $query
     if(mysqli_num_rows($query) == 1){
         if($asw['pass'] == $pass){
-            header("location:../../View/main_crud_page.php");
+            header("location:../../crud/public/crud-cruceiro");
         }else{
              header("location:../login.php?valor=1");            
          }
