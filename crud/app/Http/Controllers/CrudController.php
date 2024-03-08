@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class CrudController extends Controller
 {
     public function index(){
-        $datos=DB::select("Select * from users");       
-        return view("welcome")->with("datos", $datos);
+        $players=DB::select("Select * from player");       
+        return view("welcome")->with("players", $players);
     }
 }
